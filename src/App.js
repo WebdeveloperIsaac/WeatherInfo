@@ -1,10 +1,18 @@
-import React from 'react';
+import React,{ useState } from 'react';
 import fetchWeather from './api/fetchWeather';
 import './App.css';
 
 function App() {
-  return (
-    <div>App</div>
+    const [query, setQuery] = useState('');
+  
+    const search = async (e) => {
+        
+    }
+    
+    return (
+    <div className='main-container'>
+    <input type='text' className='search' placeholder='Search I weather Engine' value={query} onChange={(e)=> setQuery(e.target.value)}></input>
+    </div>
   )
 }
 
