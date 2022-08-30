@@ -9,10 +9,10 @@ await function get method alli url matthe params(API documentation du) i am goin
 then return The Data */
 
 const fetchWeather = async (query) =>{
-    const data = await axios.get(url,{
+    const { data } = await axios.get(url,{
         params:{
             q:query,
-            units:'metric',
+            units:'metric', //these are the supported in the APi  
             APPID:key
         }
     });
