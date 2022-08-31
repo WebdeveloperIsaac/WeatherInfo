@@ -19,7 +19,7 @@ function App() {
     
     return (
     <div className='main-container'>
-    <input type='text' className='search' placeholder='Ask Weather to Isaac' value={query}/** Direct State ge Query Send Madadhu*/ onChange={(e)=> setQuery(e.target.value)} onKeyPress={search}></input>
+    <input type='text' className='search' placeholder='Enter your TimeZone Place' value={query}/** Direct State ge Query Send Madadhu*/ onChange={(e)=> setQuery(e.target.value)} onKeyPress={search}></input>
     {weather.main && (
       <div className="city">
         <h2 className="city-name">

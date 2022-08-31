@@ -2,15 +2,15 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+    <link rel="icon" href="./images/logo.png" type="image/png" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="theme-color" content="#000000" />
     <meta
       name="description"
-      content="Web site created using create-react-app"
+      content="Isaac's First Progressive Web App with Weather Info"
     />
-    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
-    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+    <link rel="apple-touch-icon" href="./images/logo.png" />
+    <link rel="manifest" href="manifest.json" />
     <title>Weather-Isaac</title>
   </head>
   <body>
@@ -19,8 +19,10 @@
     <script>
       if('serviceWorker' in navigator){
         window.addEventListener('load',()=>{
-          navigator.serviceWorker.register('./serviceworker');
-        })
+          navigator.serviceWorker.register('./serviceworker.js')
+          .then(reg => console.log("Success",reg.scope))
+          .catch((err) => console.log("Error",err))  
+        });
       }
     </script>
   </body>

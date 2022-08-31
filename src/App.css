@@ -7,7 +7,7 @@ html, body, #root {
 }
 
 .main-container {
-    background: linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.418) ), url('./tree.jpg');
+    background: linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.418) ), url('../public/images/tree.jpg');
     background-size: cover;
     background-position: center;
 }
@@ -22,7 +22,7 @@ html, body, #root {
 
 .search {
     outline: none;
-    padding: 15px 6.7%;
+    padding: 15px 6.8%;
     border-radius: 20px;
     border: none;
     margin-bottom: 3%;
@@ -98,4 +98,9 @@ p {
     font-size: 15px;
     margin-top:10px;
     color:white;
+    
+}
+.ftr a{
+    color:white;
+    font-size: 20px;
 }
