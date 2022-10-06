@@ -1,4 +1,5 @@
-This one is not just a react app that fetches its results from the open weather api but a Progressive Web Application.
+Progressive Web Application of Weather Info Developed with React has Passed all the Tests on Google LightHouse 
+Deployment : [https://weatherclue.netlify.app/](https://weatherclue.netlify.app/)
 ![](public/images/Weather%20-App%20By%20Isaac.png)
 
 This Weather Application takes a Query of the city Name and Returns the Information in a Card Structure
